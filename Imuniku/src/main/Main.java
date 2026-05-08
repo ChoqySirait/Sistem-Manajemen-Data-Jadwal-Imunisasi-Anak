@@ -9,6 +9,6 @@ public class Main {
         System.out.println(" Sistem Informasi Imunisasi");
         System.out.println("=================================");
 
-        System.out.println("Project Java berhasil dijalankan!");
+        System.out.println("Project Java berhasil di jalankan!");
     }
 }
