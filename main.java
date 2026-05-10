@@ -1,29 +1,15 @@
-import model.Anak;
-import mapper.AnakMapper;
-
-import java.util.*;
+import Imuniku.database.DatabaseConnection;
+import java.sql.Connection;
 
 public class Main {
     public static void main(String[] args) {
-        try {
-            AnakMapper anakMapper = new AnakMapper();
+        // Panggil koneksi
+        Connection koneksi = DatabaseConnection.getConnection();
 
-            // Input data anak
-            Anak anak = new Anak(0, "Siti", new Date());
-            anakMapper.simpan(anak);
-
-            // Ambil semua data anak
-            List<Anak> daftarAnak = anakMapper.getAll();
-
-            System.out.println("=== DATA ANAK ===");
-            for (Anak a : daftarAnak) {
-                System.out.println("ID: " + a.getId());
-                System.out.println("Nama: " + a.getNama());
-                System.out.println("-------------------");
-            }
-
-        } catch (Exception e) {
-            System.out.println("Terjadi kesalahan: " + e.getMessage());
+        if (koneksi != null) {
+            System.out.println("Koneksi MySQL Workbench Berhasil!");
+        } else {
+            System.out.println("Gagal! Cek apakah Service MySQL di Windows sudah Start.");
         }
     }
 }

@@ -1,0 +1,13 @@
+# Abaikan folder hasil kompilasi
+bin/
+out/
+
+# Abaikan file konfigurasi database pribadi
+db.properties
+
+# Abaikan settingan VS Code masing-masing orang
+.vscode/
+.settings/
+.classpath
+.project
+db.properties

@@ -1,0 +1,4 @@
+# Contoh konfigurasi database (Copy file ini jadi db.properties lalu sesuaikan)
+db.url=jdbc:mysql://localhost:3306/imuniku_db
+db.user=root
+db.password=margareth07331_07331
