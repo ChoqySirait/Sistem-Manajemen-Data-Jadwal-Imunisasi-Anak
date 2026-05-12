@@ -1,0 +1,13 @@
+javac -cp "lib/mysql-connector-j-9.7.0.jar" -d out `
+Imuniku/src/dao/*.java `
+Imuniku/src/driver/*.java `
+Imuniku/src/main/*.java `
+Imuniku/src/mapper/*.java `
+Imuniku/src/model/*.java `
+Imuniku/src/service/*.java `
+Imuniku/src/util/*.java
+
+
+kemudian :
+
+java -cp "out;lib/mysql-connector-j-9.7.0.jar" Imuniku.src.main.Main
