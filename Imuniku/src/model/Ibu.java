@@ -4,12 +4,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Konsep PBO:
- * - Inheritance: extends Person
- * - Polymorphism: Override method getInfo()
- * - JCF: Menggunakan List<Anak> untuk relasi 1-ke-banyak
- */
+
 public class Ibu extends Person {
     private String nik;
     private String alamat;
