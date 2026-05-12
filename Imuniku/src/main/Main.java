@@ -42,10 +42,10 @@ public class Main {
             "\n======================================="
         );
         System.out.println(
-            "  IMUNIKU — Sistem Informasi Imunisasi"
+            "  IMUNIKU - Sistem Informasi Imunisasi"
         );
         System.out.println(
-            "  Ibu dan Anak | IT Del 2026"
+            "  Ibu dan Anak "
         );
         System.out.println(
             "======================================="

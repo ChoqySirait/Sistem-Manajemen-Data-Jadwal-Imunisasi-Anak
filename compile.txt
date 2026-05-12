@@ -1,13 +1,10 @@
-javac -cp "lib/mysql-connector-j-9.7.0.jar" -d out `
-Imuniku/src/dao/*.java `
-Imuniku/src/driver/*.java `
-Imuniku/src/main/*.java `
-Imuniku/src/mapper/*.java `
-Imuniku/src/model/*.java `
-Imuniku/src/service/*.java `
-Imuniku/src/util/*.java
+Compile :
+
+Get-ChildItem -Recurse -Filter *.java Imuniku/src | ForEach-Object { $_.FullName } | Out-File -Encoding ascii sources.txt
+
+javac -cp "Imuniku/lib/mysql-connector-j-9.7.0.jar" -d out (Get-Content sources.txt)
 
 
-kemudian :
+Kemudian :
 
-java -cp "out;lib/mysql-connector-j-9.7.0.jar" Imuniku.src.main.Main
+java -cp "out;Imuniku/lib/mysql-connector-j-9.7.0.jar" Imuniku.src.main.Main
