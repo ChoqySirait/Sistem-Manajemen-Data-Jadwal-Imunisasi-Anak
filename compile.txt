@@ -1,7 +1,6 @@
 Compile :
 
 Get-ChildItem -Recurse -Filter *.java Imuniku/src | ForEach-Object { $_.FullName } | Out-File -Encoding ascii sources.txt
-
 javac -cp "Imuniku/lib/mysql-connector-j-9.7.0.jar" -d out (Get-Content sources.txt)
 
 
