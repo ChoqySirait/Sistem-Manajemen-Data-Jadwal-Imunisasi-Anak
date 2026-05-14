@@ -233,6 +233,6 @@ public class RiwayatDAO extends BaseDAO<RiwayatImunisasi> {
                 + e.getMessage()
             );
         }
-        return
+        return hasil;
     }
 }
